@@ -1,0 +1,34 @@
+facts
+(array)
+0
+"herdanimal"
+1
+"planteater"
+2
+"striped"
+3
+"like a horse"
+4
+"mammal"
+name
+"zebra"
+uid
+"cfdb9c8c-b8f3-11eb-9bcf-9829a66bedbe"
+
+facts
+(array)
+0
+fact
+"selective bred"
+uid
+"b784f678-b8f4-11eb-a73b-9829a66bedbe"
+1
+"aquatic"
+2
+"cute"
+3
+"crustacean"
+name
+"dwarfshrimp"
+uid
+"9d465794-b8f3-11eb-807a-9829a66bedbe"

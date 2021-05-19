@@ -1,3 +1,4 @@
 interface Fact {
-    text: string;
+    uid: string;
+    fact: string;
 }

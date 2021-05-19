@@ -1,6 +1,6 @@
 import express, { json, urlencoded } from 'express';
 import cors from 'cors';
-import { getAllFacts, getAnimalFacts } from './controllers/animals';
+import { getAllAnimals, getAllFacts, getAnimalFacts, addAnimalFact, deleteAnimalFact } from './controllers/animals';
 
 const app = express();
 
@@ -12,7 +12,10 @@ app.use(cors({
     origin: true
 }));
 
+app.delete('/animals/:animalId/facts/:factId', deleteAnimalFact);
+app.put('/animals/:animalId/facts', addAnimalFact);
+app.get('/animals', getAllAnimals)
 app.get('/facts', getAllFacts);
-app.get('/facts/:name', getAnimalFacts);
+app.get('/facts/:animalId', getAnimalFacts);
 
 app.listen(5000, () => console.log("Running"));
