@@ -41,7 +41,6 @@ export const getAnimalFacts = (request: express.Request, response: express.Respo
     });
 }
 
-// [ 'bloodsucker', 'nocturnal', 'flying', 'mammal', 'small' ]
 export const addAnimalFact = (request: express.Request, response: express.Response) => {
     const animalId = request.params.animalId;
     const { fact } = request.body;

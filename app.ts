@@ -14,8 +14,8 @@ app.use(cors({
 
 app.delete('/animals/:animalId/facts/:factId', deleteAnimalFact);
 app.put('/animals/:animalId/facts', addAnimalFact);
+app.get('/animals/:animalId/facts', getAnimalFacts);
 app.get('/animals', getAllAnimals)
 app.get('/facts', getAllFacts);
-app.get('/facts/:animalId', getAnimalFacts);
 
 app.listen(5000, () => console.log("Running"));
